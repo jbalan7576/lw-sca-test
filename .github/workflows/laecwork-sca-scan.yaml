@@ -1,4 +1,4 @@
-name: Deployment Exercise 1
+name: Lacework SCA Scan
 on: push
 jobs:
   deploy:
