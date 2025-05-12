@@ -6,6 +6,10 @@ on:
       - main  # Specify the target branch for the pull request trigger 
   push:
 
+permissions: 
+  security-events: write  # Grant permission to upload SARIF files for Code Scanning 
+  contents: read  # Grant permission to read the contents of the repository 
+  
 jobs: 
   build: 
     runs-on: ubuntu-latest  # The job runs on the latest Ubuntu environment 
